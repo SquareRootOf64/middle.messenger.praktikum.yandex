@@ -1,0 +1,94 @@
+:root {
+    --primary-color: rgba(115, 7, 110, 0.73);
+    --secondary-color: #000000;
+    --accent-color: linear-gradient(90deg, #FF8DFA 0%, #C26CBF 51.15%, #995596 100%);
+    --background-color: #ffffff;
+    --text-color: rgba(115, 7, 110, 0.78);
+    --label-color: rgba(255, 141, 250, 0.95);
+    --input-border: #FF8DFA6B;
+    --save-button: rgba(115, 7, 110, 0.73);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Arial";
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    background-position: center;
+    background-color: var(--background-color);
+}
+
+.login {
+    width: 300px;
+    height: 450px;
+    background-color: var(--background-color);
+    border: 1px solid lightgrey;
+    border-radius: 15px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 80px 30px;
+}
+
+h1, h2 {
+    text-align: center;
+    color: var(--text-color);
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 16px;
+}
+
+.login input {
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid var(--input-border);
+    margin-bottom: 16px;
+    outline: none;
+    background: transparent;
+    height: 30px;
+    color: var(--input-border);
+    font-size: 15px;
+}
+
+.login label {
+    color: var(--input-border);
+}
+
+.enter-button {
+    font-size: 20px;
+    vertical-align: center;
+    border: none;
+    outline: none;
+    height: 40px;
+    width: 100%;
+    border-radius: 25px;
+    background-color: var(--accent-color);
+    margin-top: 10px;
+    margin-bottom: 30px;
+    color: var(--background-color);
+    background: var(--accent-color);
+}
+
+.enter-button:hover {
+    background: var(--label-color);
+    cursor: pointer;
+    transition: 0.5s;
+}
+a {
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+}
+
+
+
+
+
+
