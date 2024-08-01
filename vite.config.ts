@@ -1,5 +1,5 @@
 import { defineConfig } from 'vite';
-import handlebars from 'vite-plugin-handlebars';
+import handlebars from './vite-plugin-handlebars-precompile';
 import { resolve } from 'node:path';
 
 export default defineConfig({
