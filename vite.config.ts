@@ -7,11 +7,12 @@ export default defineConfig({
         rollupOptions: {
             input: {
                 main: resolve(__dirname, 'index.html'),
-                chats: resolve(__dirname, 'src/chats/chats.html'),
-                error404: resolve(__dirname, 'src/errors/error404.html'),
-                error500: resolve(__dirname, 'src/errors/error500.html'),
-                profile: resolve(__dirname, 'src/profile/profile.html'),
-                register: resolve(__dirname, 'src/register/register.html'),
+                //login: resolve(__dirname, 'login.hbs'),
+                chats: resolve(__dirname, 'src/pages/chats/chats.html'),
+                error404: resolve(__dirname, 'src/pages/errors/error404.html'),
+                error500: resolve(__dirname, 'src/pages/errors/error500.html'),
+                profile: resolve(__dirname, 'src/pages/profile/profile.html'),
+                register: resolve(__dirname, 'src/pages/register/register.html'),
             },
         },
     },
