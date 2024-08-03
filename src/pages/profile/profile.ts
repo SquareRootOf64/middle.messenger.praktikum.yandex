@@ -1,4 +1,4 @@
-import template from './profile';
+import template from './profile.hbs';
 import '../../pages/profile/profile.scss';
 import EventBus from '../../utils/EventBus';
 
@@ -13,14 +13,26 @@ export default class Profile {
         const app = document.getElementById('app');
         if (app) {
             const props = {
-                // Дополните объект props нужными данными
+                title: "User Settings",
+                firstNameLabel: "First Name:",
+                secondNameLabel: "Second Name:",
+                displayNameLabel: "Display Name:",
+                loginLabel: "Login:",
+                emailLabel: "Email:",
+                phoneLabel: "Phone:",
+                avatarLabel: "Avatar:",
+                oldPasswordLabel: "Old Password:",
+                newPasswordLabel: "New Password:",
+                saveChangesButtonText: "Save Changes",
+                backLinkText: "Back"
             };
+
             app.innerHTML = template(props);
 
             // Пример использования EventBus
-            const chatsLink = document.querySelector('a');
-            if (chatsLink) {
-                chatsLink.addEventListener('click', (event) => {
+            const backLink = document.querySelector('a');
+            if (backLink) {
+                backLink.addEventListener('click', (event) => {
                     event.preventDefault();
                     this.eventBus.emit('navigate', '/chats');
                 });

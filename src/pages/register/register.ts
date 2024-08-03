@@ -1,5 +1,5 @@
 import template from './register.hbs';
-import '../../pages/register/register.scss';
+import './register.scss';
 import EventBus from '../../utils/EventBus';
 
 export default class Register {
@@ -13,8 +13,17 @@ export default class Register {
         const app = document.getElementById('app');
         if (app) {
             const props = {
-                // Дополните объект props нужными данными
+                title: "Sign up",
+                firstNameLabel: "First name",
+                secondNameLabel: "Second name",
+                loginLabel: "Login",
+                emailLabel: "Email",
+                passwordLabel: "Password",
+                phoneLabel: "Phone",
+                createUserButtonText: "Create user",
+                signInText: "Sign in"
             };
+
             app.innerHTML = template(props);
 
             // Пример использования EventBus

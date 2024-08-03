@@ -1,5 +1,4 @@
-import template from '../../templates/login.hbs';
-import '../../pages/login/login.scss';
+import template from './login.hbs';
 import EventBus from '../../utils/EventBus';
 
 export default class Login {

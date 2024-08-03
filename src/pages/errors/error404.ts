@@ -1,5 +1,5 @@
 import template from './error404.hbs';
-import 'error404.scss';
+import './error404.scss';
 import EventBus from '../../utils/EventBus';
 
 export default class Error404 {
@@ -13,7 +13,7 @@ export default class Error404 {
         const app = document.getElementById('app');
         if (app) {
             const props = {
-                // Дополните объект props нужными данными
+
             };
             app.innerHTML = template(props);
         } else {
