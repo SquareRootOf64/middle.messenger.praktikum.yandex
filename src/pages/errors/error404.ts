@@ -16,6 +16,16 @@ export default class Error404 {
 
             };
             app.innerHTML = template(props);
+
+
+            const backToChatsLink = document.querySelector('a');
+            if (backToChatsLink) {
+                backToChatsLink.addEventListener('click', (event) => {
+                    event.preventDefault();
+                    window.location.href = '/chats';
+                });
+            }
+
         } else {
             console.error('App element not found in the DOM.');
         }

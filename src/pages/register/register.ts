@@ -31,11 +31,11 @@ export default class Register {
             if (signInLink) {
                 signInLink.addEventListener('click', (event) => {
                     event.preventDefault();
-                    this.eventBus.emit('navigate', '/login');
+                    window.location.href = '/login';
                 });
             }
-        } else {
-            console.error('App element not found in the DOM.');
-        }
+            } else {
+                console.error('App element not found in the DOM.');
+            }
     }
 }

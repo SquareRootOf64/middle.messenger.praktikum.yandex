@@ -26,7 +26,14 @@ export default class Login {
             if (signUpLink) {
                 signUpLink.addEventListener('click', (event) => {
                     event.preventDefault();
-                    this.eventBus.emit('navigate', '/register');
+                    window.location.href = '/register';
+                });
+            }
+            const enterButton = document.querySelector('button');
+            if (enterButton) {
+                enterButton.addEventListener('click', (event) => {
+                    event.preventDefault();
+                    window.location.href = '/chats';
                 });
             }
         } else {

@@ -34,9 +34,10 @@ export default class Profile {
             if (backLink) {
                 backLink.addEventListener('click', (event) => {
                     event.preventDefault();
-                    this.eventBus.emit('navigate', '/chats');
+                    window.location.href = '/chats';
                 });
             }
+
         } else {
             console.error('App element not found in the DOM.');
         }

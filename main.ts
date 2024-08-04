@@ -20,6 +20,7 @@ function renderPage() {
     const path = window.location.pathname;
 
     switch (path) {
+        case '/':
         case '/login':
             const loginPage = new Login(eventBus);
             loginPage.render();

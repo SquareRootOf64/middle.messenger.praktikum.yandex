@@ -14,6 +14,15 @@ export default class Error500 {
         if (app) {
 
             app.innerHTML = template({});
+
+            const backToChatsLink = document.querySelector('a');
+            if (backToChatsLink) {
+                backToChatsLink.addEventListener('click', (event) => {
+                    event.preventDefault();
+                    window.location.href = '/chats';
+                });
+            }
+
         } else {
             console.error('App element not found in the DOM.');
         }
