@@ -58,3 +58,4 @@ export function validateForm(form: HTMLFormElement): boolean {
     });
     return isFormValid;
 }
+
