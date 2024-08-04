@@ -46,10 +46,19 @@ export default class Login {
             }
 
             const signUpLink = document.querySelector('a');
+            const enterButton = document.querySelector('button');
+
             if (signUpLink) {
                 signUpLink.addEventListener('click', (event) => {
                     event.preventDefault();
                     window.location.href = '/register';
+                });
+            }
+
+            if (enterButton) {
+                enterButton.addEventListener('click', (event) => {
+                    event.preventDefault();
+                    window.location.href = '/chats';
                 });
             }
         } else {
