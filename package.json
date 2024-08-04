@@ -28,5 +28,16 @@
     "express": "^4.18.2",
     "handlebars": "^4.7.8",
     "vite-plugin-handlebars": "^2.0.0"
+  },
+  "compilerOptions": {
+    "target": "es2016",
+    "module": "commonjs",
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,
+    "skipLibCheck": true,
+    "noImplicitAny": true,
+    "noUnusedLocals": true
   }
 }
+
