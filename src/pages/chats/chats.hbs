@@ -1,0 +1,30 @@
+<main class="chat-container">
+    <div class="chat-list">
+        <h2>{{title}}</h2>
+        <ul>
+            {{#each chatList}}
+                <li>{{this}}</li>
+            {{/each}}
+        </ul>
+    </div>
+    <div class="chat-area">
+        <div class="chat-area-header">
+            <button class="button-my-profile">
+                <a href="/profile">My Profile</a>
+            </button>
+            <button class="button-logout">
+                <a href="/login">Log out</a>
+            </button>
+        </div>
+        <div class="chat-messages">
+            {{#each messages}}
+                <p class="{{#if right}}message-right{{/if}}"><strong>{{user}}:</strong> {{text}}</p>
+            {{/each}}
+        </div>
+        <div class="message-input">
+            <input type="text" id="message" name="message" placeholder="Введите сообщение...">
+            <button>Отправить</button>
+        </div>
+    </div>
+</main>
+

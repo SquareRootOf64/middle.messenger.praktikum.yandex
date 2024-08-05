@@ -7,6 +7,7 @@ body {
 
 .container {
     max-width: 400px;
+    height: 1000px;
     margin: 50px auto;
     padding: 20px;
     background-color: var(--background-color);
@@ -20,7 +21,7 @@ h1 {
 
 form {
     display: grid;
-    grid-gap: 10px;
+    grid-gap: 4px;
 }
 
 label {
@@ -31,8 +32,8 @@ input[type="text"],
 input[type="email"],
 input[type="password"] {
     width: 95%;
-    padding: 8px;
-    margin-bottom: 10px;
+    padding: 2px;
+    margin-bottom: 4px;
     border: 1px solid #ccc;
     border-radius: 4px;
 }
@@ -52,3 +53,4 @@ a {
     text-decoration: none;
     text-align: center;
 }
+
